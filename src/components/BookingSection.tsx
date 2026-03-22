@@ -48,7 +48,7 @@ export default function BookingSection() {
     if (!form.name || !form.phone || !form.service || !form.date || !form.time) {
       toast({
         variant: "destructive",
-        title: "Bitte Pflichtfelder ausfuellen",
+        title: "Bitte Pflichtfelder ausfüllen",
         description: "Name, Telefon, Service, Datum und Uhrzeit sind erforderlich.",
       });
       return;
@@ -70,7 +70,7 @@ export default function BookingSection() {
 
     toast({
       title: "Anfrage gesendet",
-      description: "Vielen Dank! Wir melden uns kurzfristig zur Terminbestaetigung.",
+      description: "Vielen Dank! Wir melden uns kurzfristig zur Terminbestätigung.",
     });
 
     setIsSubmitting(false);
@@ -99,7 +99,7 @@ export default function BookingSection() {
           </div>
 
           <h2 className="reveal reveal-delay-1 font-display text-display-xl text-foreground mb-8 leading-tight">
-            Ihr naechster
+            Ihr nächster
             <br />
             <em className="not-italic text-gold">Haarsalon-Besuch</em>
             <br />
@@ -175,7 +175,7 @@ export default function BookingSection() {
                   onChange={(event) => setForm((prev) => ({ ...prev, service: event.target.value }))}
                   className="flex h-10 w-full rounded-md border border-input bg-white px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                 >
-                  <option value="">Bitte auswaehlen</option>
+                  <option value="">Bitte auswählen</option>
                   <option value="Premium Hair Coloring">Premium Hair Coloring</option>
                   <option value="Highlights & Glossing">Highlights & Glossing</option>
                   <option value="Hair Extensions">Hair Extensions</option>
@@ -218,7 +218,7 @@ export default function BookingSection() {
                   id="booking-message"
                   value={form.message}
                   onChange={(event) => setForm((prev) => ({ ...prev, message: event.target.value }))}
-                  placeholder="Wunschlook, Haarlaenge, bevorzugte Zeit ..."
+                  placeholder="Wunschlook, Haarlänge, bevorzugte Zeit ..."
                   className="min-h-[110px] bg-white"
                 />
               </div>
@@ -243,8 +243,8 @@ export default function BookingSection() {
           <div className="reveal reveal-delay-6 grid grid-cols-1 sm:grid-cols-3 gap-8">
             {[
               { label: "Kostenlose Beratung", sub: "Vor jedem Termin" },
-              { label: "Flexibel & puenktlich", sub: "Nach Ihrer Zeit" },
-              { label: "Ergebnisgarantie", sub: "Ihre Zufriedenheit zaehlt" },
+                { label: "Flexibel & pünktlich", sub: "Nach Ihrer Zeit" },
+                { label: "Ergebnisgarantie", sub: "Ihre Zufriedenheit zählt" },
             ].map((p) => (
               <div key={p.label} className="flex items-start gap-3">
                 <span className="line-gold mt-1.5 flex-shrink-0" />
