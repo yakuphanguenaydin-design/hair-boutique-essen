@@ -60,7 +60,7 @@ export default function BookingSection() {
               Anrufen
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/hairboutiique/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 font-body text-xs tracking-[0.2em] uppercase border border-foreground text-foreground px-10 py-4 hover:bg-foreground hover:text-primary-foreground transition-all duration-300 active:scale-[0.97]"

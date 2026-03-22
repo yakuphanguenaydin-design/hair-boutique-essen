@@ -51,7 +51,7 @@ export default function ContactSection() {
             {/* Social */}
             <div className="reveal reveal-delay-1 flex items-center gap-4">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/hairboutiique/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 font-body text-xs tracking-[0.18em] uppercase text-primary-foreground/60 hover:text-gold transition-colors duration-300"
@@ -86,12 +86,12 @@ export default function ContactSection() {
               <div className="flex items-center gap-4">
                 <Instagram size={14} className="text-gold flex-shrink-0" />
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/hairboutiique/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-body text-sm text-primary-foreground/70 hover:text-gold transition-colors"
                 >
-                  @hairboutique.essen
+                  @hairboutiique
                 </a>
               </div>
             </div>

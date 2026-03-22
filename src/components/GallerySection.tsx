@@ -75,7 +75,7 @@ export default function GallerySection() {
         <div className="reveal reveal-delay-4 mt-12 flex items-center justify-center gap-6">
           <span className="hidden sm:block w-16 h-px bg-divider" />
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/hairboutiique/"
             target="_blank"
             rel="noopener noreferrer"
             className="font-body text-xs tracking-[0.2em] uppercase text-foreground border-b border-foreground pb-1 hover:text-gold hover:border-gold transition-colors duration-300"
