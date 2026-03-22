@@ -44,7 +44,7 @@ export default function Navbar() {
               <a
                 key={l.href}
                 href={l.href}
-                className="font-body text-xs tracking-[0.18em] uppercase text-warm-grey hover:text-foreground transition-colors duration-300"
+                className="font-body text-xs tracking-[0.18em] uppercase text-foreground/80 hover:text-foreground transition-colors duration-300"
               >
                 {l.label}
               </a>
@@ -82,7 +82,7 @@ export default function Navbar() {
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="font-body text-xs tracking-[0.18em] uppercase text-warm-grey hover:text-foreground transition-colors"
+              className="font-body text-xs tracking-[0.18em] uppercase text-foreground/80 hover:text-foreground transition-colors"
             >
               {l.label}
             </a>
