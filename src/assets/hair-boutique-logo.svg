@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" role="img" aria-label="Hair Boutique Logo">
+  <g fill="none" fill-rule="evenodd">
+    <rect x="2" y="2" width="86" height="86" rx="16" stroke="#2A1F1C" stroke-width="3"/>
+    <path d="M19 66h52" stroke="#D8BFA6" stroke-width="3" stroke-linecap="round"/>
+    <path d="M22 24h10v17h13V24h10v42H45V49H32v17H22z" fill="#2A1F1C"/>
+    <text x="106" y="40" font-family="Cormorant Garamond, serif" font-size="32" font-weight="700" fill="#2A1F1C" letter-spacing="2">HAIR</text>
+    <text x="106" y="70" font-family="Cormorant Garamond, serif" font-size="28" font-weight="600" fill="#D8BFA6" letter-spacing="3">BOUTIQUE</text>
+  </g>
+</svg>

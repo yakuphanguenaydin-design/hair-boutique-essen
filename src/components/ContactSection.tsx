@@ -1,5 +1,6 @@
 import { useRef, useEffect } from "react";
 import { MapPin, Clock, Instagram, Phone } from "lucide-react";
+import logo from "@/assets/hair-boutique-logo.svg";
 
 const hours = [
   { day: "Montag", time: "Geschlossen" },
@@ -35,13 +36,8 @@ export default function ContactSection() {
           {/* Brand column */}
           <div className="lg:col-span-1">
             <div className="reveal mb-8">
-              <div className="flex flex-col leading-none mb-6">
-                <span className="font-display text-2xl tracking-widest uppercase text-primary-foreground/90">
-                  Hair
-                </span>
-                <span className="font-display text-2xl tracking-widest uppercase text-gold">
-                  Boutique
-                </span>
+              <div className="inline-flex rounded-xl bg-white px-3 py-2 mb-6">
+                <img src={logo} alt="Hair Boutique" className="h-12 w-auto sm:h-14" />
               </div>
               <p className="font-body text-sm text-primary-foreground/50 leading-relaxed max-w-xs">
                 Premium Haarsalon in Essen. Spezialisiert auf natürliche Haarfarben, Highlights und hochwertige Extensions.

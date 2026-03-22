@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/hair-boutique-logo.svg";
 
 const links = [
   { label: "Leistungen", href: "#leistungen" },
@@ -29,13 +30,12 @@ export default function Navbar() {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="flex flex-col leading-none group">
-            <span className="font-display text-xl tracking-widest uppercase text-foreground">
-              Hair
-            </span>
-            <span className="font-display text-xl tracking-widest uppercase text-gold">
-              Boutique
-            </span>
+          <a href="#" className="group">
+            <img
+              src={logo}
+              alt="Hair Boutique"
+              className="h-12 w-auto sm:h-14 transition-opacity duration-300 group-hover:opacity-80"
+            />
           </a>
 
           {/* Desktop Nav */}
