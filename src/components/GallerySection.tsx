@@ -6,6 +6,7 @@ import galleryImg4 from "@/assets/gallery-4.jpg";
 import galleryImg6 from "@/assets/gallery-6.jpg";
 import serviceColor from "@/assets/service-color.jpg";
 import salonInterior from "@/assets/salon-interior.jpg";
+import { importedImagesConfig } from "@/config/importedImages";
 
 const galleryItems = [
   { src: heroHair,       alt: "Golden Balayage Highlight-Ergebnis",             span: "col-span-1 row-span-2" },
@@ -17,8 +18,26 @@ const galleryItems = [
   { src: salonInterior,  alt: "Hair Boutique Salon Essen Innenraum",            span: "col-span-1 row-span-1" },
 ];
 
+const importedSpans = [
+  "col-span-1 row-span-2",
+  "col-span-1 row-span-1",
+  "col-span-1 row-span-1",
+  "col-span-1 row-span-1",
+  "col-span-1 row-span-1",
+  "col-span-1 row-span-1",
+];
+
 export default function GallerySection() {
   const sectionRef = useRef<HTMLElement>(null);
+  const importedGalleryItems = importedImagesConfig.enabled
+    ? importedImagesConfig.gallery.map((src, index) => ({
+        src,
+        alt: `Instagram Import ${index + 1}`,
+        span: importedSpans[index % importedSpans.length],
+      }))
+    : [];
+
+  const visibleGalleryItems = importedGalleryItems.length > 0 ? importedGalleryItems : galleryItems;
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -56,7 +75,7 @@ export default function GallerySection() {
 
         {/* Masonry-style grid */}
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 auto-rows-[240px] lg:auto-rows-[300px]">
-          {galleryItems.map((item, i) => (
+          {visibleGalleryItems.map((item, i) => (
             <div
               key={i}
               className={`reveal reveal-delay-${Math.min(i + 1, 6)} overflow-hidden group ${item.span}`}

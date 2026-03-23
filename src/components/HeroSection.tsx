@@ -1,12 +1,17 @@
 import heroHair from "@/assets/hero-hair.jpg";
+import { importedImagesConfig } from "@/config/importedImages";
 
 export default function HeroSection() {
+  const heroSource = importedImagesConfig.enabled && importedImagesConfig.hero
+    ? importedImagesConfig.hero
+    : heroHair;
+
   return (
     <section className="relative min-h-screen flex items-end overflow-hidden">
       {/* Full-bleed image */}
       <div className="absolute inset-0">
         <img
-          src={heroHair}
+          src={heroSource}
           alt="Luxuriöse Haarfarbe und Extensions bei Hair Boutique Essen"
           className="w-full h-full object-cover object-center"
           loading="eager"
