@@ -24,7 +24,7 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? "bg-white/95 backdrop-blur-sm border-b border-divider" : "bg-white/85 backdrop-blur-sm border-b border-divider/40"
+        scrolled ? "bg-charcoal backdrop-blur-sm border-b border-primary-foreground/10" : "bg-charcoal border-b border-primary-foreground/10"
       }`}
     >
       <div className="container mx-auto px-6 lg:px-12">
@@ -44,7 +44,7 @@ export default function Navbar() {
               <a
                 key={l.href}
                 href={l.href}
-                className="font-body text-xs tracking-[0.18em] uppercase text-foreground/80 hover:text-foreground transition-colors duration-300"
+                className="font-body text-xs tracking-[0.18em] uppercase text-primary-foreground/80 hover:text-gold transition-colors duration-300"
               >
                 {l.label}
               </a>
@@ -54,7 +54,7 @@ export default function Navbar() {
           {/* CTA */}
           <a
             href="#buchen"
-            className="hidden lg:inline-flex items-center gap-2 font-body text-xs tracking-[0.18em] uppercase border border-foreground text-foreground px-7 py-3 hover:bg-foreground hover:text-primary-foreground transition-all duration-300"
+            className="hidden lg:inline-flex items-center gap-2 font-body text-xs tracking-[0.18em] uppercase border border-primary-foreground text-primary-foreground px-7 py-3 hover:bg-primary-foreground hover:text-charcoal transition-all duration-300"
           >
             Termin buchen
           </a>
@@ -62,7 +62,7 @@ export default function Navbar() {
           {/* Mobile menu toggle */}
           <button
             onClick={() => setOpen(!open)}
-            className="lg:hidden text-foreground p-1"
+            className="lg:hidden text-primary-foreground p-1"
             aria-label="Menü"
           >
             {open ? <X size={22} /> : <Menu size={22} />}
@@ -72,7 +72,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden bg-white border-t border-divider overflow-hidden transition-all duration-500 ${
+        className={`lg:hidden bg-charcoal border-t border-primary-foreground/10 overflow-hidden transition-all duration-500 ${
           open ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
@@ -82,7 +82,7 @@ export default function Navbar() {
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="font-body text-xs tracking-[0.18em] uppercase text-foreground/80 hover:text-foreground transition-colors"
+              className="font-body text-xs tracking-[0.18em] uppercase text-primary-foreground/80 hover:text-gold transition-colors"
             >
               {l.label}
             </a>
@@ -90,7 +90,7 @@ export default function Navbar() {
           <a
             href="#buchen"
             onClick={() => setOpen(false)}
-            className="mt-2 inline-flex items-center justify-center font-body text-xs tracking-[0.18em] uppercase border border-foreground text-foreground px-7 py-4 hover:bg-foreground hover:text-primary-foreground transition-all duration-300"
+            className="mt-2 inline-flex items-center justify-center font-body text-xs tracking-[0.18em] uppercase border border-primary-foreground text-primary-foreground px-7 py-4 hover:bg-primary-foreground hover:text-charcoal transition-all duration-300"
           >
             Termin buchen
           </a>
