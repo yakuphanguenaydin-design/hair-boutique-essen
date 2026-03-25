@@ -10,7 +10,7 @@ export type ImportedImagesConfig = {
 export const importedImagesConfig: ImportedImagesConfig = {
   enabled: true,
   slug: "instagram-extracted-images",
-  hero: "/instagram-imports/DVofjmejNLR.jpg",
+  hero: "/instagram-imports/DUqq8VEjErn.jpg",
   services: [
   "/instagram-imports/DV4BQL8DDR5.jpg",
   "/instagram-imports/DVJrlqsjJA2.jpg"
