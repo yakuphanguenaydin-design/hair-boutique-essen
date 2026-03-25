@@ -64,20 +64,26 @@ function extractPostInfo(rawUrl) {
 
 function buildImportedConfigFile({ slug, galleryCount }) {
   const hero = `/imported/${slug}/hero.jpg`;
+  const services = [];
   const gallery = Array.from({ length: galleryCount }, (_, i) => `/imported/${slug}/gallery-${i + 1}.jpg`);
+  const about = "";
 
   return `export type ImportedImagesConfig = {
   enabled: boolean;
   slug: string;
   hero: string;
+  services: string[];
   gallery: string[];
+  about: string;
 };
 
 export const importedImagesConfig: ImportedImagesConfig = {
   enabled: true,
   slug: "${slug}",
   hero: "${hero}",
+  services: ${JSON.stringify(services, null, 2)},
   gallery: ${JSON.stringify(gallery, null, 2)},
+  about: ${JSON.stringify(about)},
 };
 `;
 }

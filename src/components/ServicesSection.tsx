@@ -3,6 +3,7 @@ import serviceColorImg from "@/assets/service-color.jpg";
 import galleryImg2 from "@/assets/gallery-2.jpg";
 import galleryImg3 from "@/assets/gallery-3.jpg";
 import salonInterior from "@/assets/salon-interior.jpg";
+import { importedImagesConfig } from "@/config/importedImages";
 
 const services = [
   {
@@ -41,6 +42,11 @@ const services = [
 
 export default function ServicesSection() {
   const sectionRef = useRef<HTMLElement>(null);
+  const importedServiceImages = importedImagesConfig.enabled ? importedImagesConfig.services : [];
+  const visibleServices = services.map((service, index) => ({
+    ...service,
+    image: importedServiceImages[index] || service.image,
+  }));
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -73,7 +79,7 @@ export default function ServicesSection() {
 
         {/* Services grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-divider border border-divider">
-          {services.map((service, i) => (
+          {visibleServices.map((service, i) => (
             <div
               key={service.number}
               className={`reveal reveal-delay-${i + 1} group bg-cream hover:bg-champagne transition-colors duration-500 p-8 lg:p-12`}

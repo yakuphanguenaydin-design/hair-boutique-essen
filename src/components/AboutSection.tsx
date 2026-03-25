@@ -1,5 +1,6 @@
 import { useRef, useEffect } from "react";
 import salonInterior from "@/assets/salon-interior.jpg";
+import { importedImagesConfig } from "@/config/importedImages";
 
 const values = [
   {
@@ -18,6 +19,9 @@ const values = [
 
 export default function AboutSection() {
   const sectionRef = useRef<HTMLElement>(null);
+  const aboutImage = importedImagesConfig.enabled && importedImagesConfig.about
+    ? importedImagesConfig.about
+    : salonInterior;
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -40,7 +44,7 @@ export default function AboutSection() {
           <div className="reveal order-2 lg:order-1">
             <div className="relative">
               <img
-                src={salonInterior}
+                src={aboutImage}
                 alt="Hair Boutique Salon Essen Innenansicht"
                 loading="lazy"
                 className="w-full aspect-[4/5] object-cover"
