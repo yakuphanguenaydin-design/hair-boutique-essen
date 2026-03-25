@@ -12,13 +12,13 @@ export const importedImagesConfig: ImportedImagesConfig = {
   slug: "instagram-extracted-images",
   hero: "/instagram-imports/DUqq8VEjErn.jpg",
   services: [
-  "/instagram-imports/DV4BQL8DDR5.jpg",
-  "/instagram-imports/DVJrlqsjJA2.jpg"
-],
+    "/instagram-imports/DV4BQL8DDR5.jpg",
+    "/instagram-imports/DVJrlqsjJA2.jpg"
+  ],
   gallery: [
-  "/instagram-imports/DUlWfLjDEU0.jpg",
-  "/instagram-imports/DUqq8VEjErn.jpg",
-  "/instagram-imports/DT0rVa6jHBj.jpg"
-],
+    "/instagram-imports/DUlWfLjDEU0.jpg",
+    "/instagram-imports/DSAM2uhDHFQ.jpg",
+    "/instagram-imports/C3QTh-5IwJd.jpg"
+  ],
   about: "/instagram-imports/DOY8YQfCFmk.jpg",
 };
