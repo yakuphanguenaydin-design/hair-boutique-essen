@@ -34,7 +34,7 @@ export default function Navbar() {
             <img
               src={logo}
               alt="Hair Boutique"
-              className="h-12 w-auto sm:h-14 transition-opacity duration-300 group-hover:opacity-80"
+              className="h-12 w-auto sm:h-14 rounded-xl transition-opacity duration-300 group-hover:opacity-80"
             />
           </a>
 

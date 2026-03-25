@@ -37,7 +37,7 @@ export default function ContactSection() {
           <div className="lg:col-span-1">
             <div className="reveal mb-8">
               <div className="inline-flex rounded-xl bg-white px-3 py-2 mb-6">
-                <img src={logo} alt="Hair Boutique" className="h-12 w-auto sm:h-14" />
+                <img src={logo} alt="Hair Boutique" className="h-12 w-auto sm:h-14 rounded-xl" />
               </div>
               <p className="font-body text-sm text-primary-foreground/50 leading-relaxed max-w-xs">
                 Premium Haarsalon in Essen. Spezialisiert auf natürliche Haarfarben, Highlights und hochwertige Extensions.
@@ -122,7 +122,7 @@ export default function ContactSection() {
       <div className="border-t border-primary-foreground/10">
         <div className="container mx-auto px-6 lg:px-12 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="Hair Boutique" className="h-7 w-auto" />
+            <img src={logo} alt="Hair Boutique" className="h-7 w-auto rounded-md" />
             <p className="font-body text-xs text-primary-foreground/30 tracking-wide">
               © {new Date().getFullYear()} Hair Boutique Essen. Alle Rechte vorbehalten.
             </p>
