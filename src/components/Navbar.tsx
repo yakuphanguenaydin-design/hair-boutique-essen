@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/hair-boutique-logo-2.svg";
+import logo from "@/assets/hair_boutique_logo_rounded.svg";
 
 const links = [
   { label: "Leistungen", href: "#leistungen" },
@@ -24,7 +24,7 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? "bg-cream/95 backdrop-blur-sm border-b border-divider" : "bg-transparent"
+        scrolled ? "bg-white/95 backdrop-blur-sm border-b border-divider" : "bg-white/85 backdrop-blur-sm border-b border-divider/40"
       }`}
     >
       <div className="container mx-auto px-6 lg:px-12">
@@ -72,7 +72,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden bg-cream border-t border-divider overflow-hidden transition-all duration-500 ${
+        className={`lg:hidden bg-white border-t border-divider overflow-hidden transition-all duration-500 ${
           open ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >

@@ -1,6 +1,6 @@
 import { useRef, useEffect } from "react";
 import { MapPin, Clock, Instagram, Phone } from "lucide-react";
-import logo from "@/assets/hair-boutique-logo.svg";
+import logo from "@/assets/hair_boutique_logo_rounded.svg";
 
 const hours = [
   { day: "Montag", time: "Geschlossen" },
@@ -121,9 +121,12 @@ export default function ContactSection() {
       {/* Bottom bar */}
       <div className="border-t border-primary-foreground/10">
         <div className="container mx-auto px-6 lg:px-12 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="font-body text-xs text-primary-foreground/30 tracking-wide">
-            © {new Date().getFullYear()} Hair Boutique Essen. Alle Rechte vorbehalten.
-          </p>
+          <div className="flex items-center gap-3">
+            <img src={logo} alt="Hair Boutique" className="h-7 w-auto" />
+            <p className="font-body text-xs text-primary-foreground/30 tracking-wide">
+              © {new Date().getFullYear()} Hair Boutique Essen. Alle Rechte vorbehalten.
+            </p>
+          </div>
           <p className="font-body text-xs text-primary-foreground/20 tracking-wide">
             Impressum · Datenschutz
           </p>
