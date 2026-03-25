@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/hair-boutique-logo.svg";
+import logo from "@/assets/hair-boutique-logo-2.svg";
 
 const links = [
   { label: "Leistungen", href: "#leistungen" },
