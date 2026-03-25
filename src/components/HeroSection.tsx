@@ -13,7 +13,7 @@ export default function HeroSection() {
         <img
           src={heroSource}
           alt="Luxuriöse Haarfarbe und Extensions bei Hair Boutique Essen"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-top"
           loading="eager"
         />
         {/* Subtle dark gradient at bottom for text legibility */}
