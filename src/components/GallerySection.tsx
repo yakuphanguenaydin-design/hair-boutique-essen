@@ -10,21 +10,21 @@ import { importedImagesConfig } from "@/config/importedImages";
 
 const galleryItems = [
   { src: heroHair,       alt: "Golden Balayage Highlight-Ergebnis",             span: "col-span-1 row-span-2" },
-  { src: galleryImg3,    alt: "Ash Blonde Haarfarbe Ergebnis",                  span: "col-span-1 row-span-1" },
-  { src: galleryImg4,    alt: "Warme Bronde Strähnen Nahaufnahme",              span: "col-span-1 row-span-1" },
-  { src: galleryImg2,    alt: "Luxuriöse Extensions — Brunette",                span: "col-span-1 row-span-1" },
-  { src: galleryImg6,    alt: "Professionelle Haarfarbe Technik",               span: "col-span-1 row-span-1" },
-  { src: serviceColor,   alt: "Highlights & Glossing Behandlung",               span: "col-span-1 row-span-1" },
-  { src: salonInterior,  alt: "Hair Boutique Salon Essen Innenraum",            span: "col-span-1 row-span-1" },
+  { src: galleryImg3,    alt: "Ash Blonde Haarfarbe Ergebnis",                  span: "col-span-1 row-span-2" },
+  { src: galleryImg4,    alt: "Warme Bronde Strähnen Nahaufnahme",              span: "col-span-1 row-span-2" },
+  { src: galleryImg2,    alt: "Luxuriöse Extensions — Brunette",                span: "col-span-1 row-span-2" },
+  { src: galleryImg6,    alt: "Professionelle Haarfarbe Technik",               span: "col-span-1 row-span-2" },
+  { src: serviceColor,   alt: "Highlights & Glossing Behandlung",               span: "col-span-1 row-span-2" },
+  { src: salonInterior,  alt: "Hair Boutique Salon Essen Innenraum",            span: "col-span-1 row-span-2" },
 ];
 
 const importedSpans = [
   "col-span-1 row-span-2",
-  "col-span-1 row-span-1",
-  "col-span-1 row-span-1",
-  "col-span-1 row-span-1",
-  "col-span-1 row-span-1",
-  "col-span-1 row-span-1",
+  "col-span-1 row-span-2",
+  "col-span-1 row-span-2",
+  "col-span-1 row-span-2",
+  "col-span-1 row-span-2",
+  "col-span-1 row-span-2",
 ];
 
 export default function GallerySection() {
