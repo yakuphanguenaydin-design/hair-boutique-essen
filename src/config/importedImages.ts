@@ -18,7 +18,8 @@ export const importedImagesConfig: ImportedImagesConfig = {
   gallery: [
     "/instagram-imports/DUlWfLjDEU0.jpg",
     "/instagram-imports/DSAM2uhDHFQ.jpg",
-    "/instagram-imports/C3QTh-5IwJd.jpg"
+    "/instagram-imports/C3QTh-5IwJd.jpg",
+    "/instagram-imports/DT0rVa6jHBj.jpg"
   ],
   about: "/instagram-imports/DOY8YQfCFmk.jpg",
 };
