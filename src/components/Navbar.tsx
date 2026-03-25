@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+// trigger vercel navbar redeploy
 
 const links = [
   { label: "Leistungen", href: "#leistungen" },
